@@ -1,0 +1,41 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="Camera overlay"
+        android:key="camera_overlay">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="switch_draw_face_bounds"
+            android:title="Draw face bounds"
+            android:summary="Draw on top of the camera display detected face bounds"/>
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="switch_draw_face_contours"
+            android:title="Draw face contours"
+            android:summary=""/>
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="switch_draw_eyes_contours"
+            android:title="Draw eyes contours"
+            android:summary=""/>
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="switch_save_face"
+            android:title="Save cropped detected face"
+            android:summary="Save cropped face in internal storage (debugging purpose)"/>
+
+    </PreferenceCategory>
+    <PreferenceCategory app:title="@string/messages_header">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="blinking_detection"
+            android:title="Blinking detection"
+            android:summary="A toast appears when blinking is detected"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>
